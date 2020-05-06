@@ -22,7 +22,7 @@ class APIClient {
 			queryItems.append(URLQueryItem(name: "keyword", value: keyword))
 		}
 		queryItems.append(URLQueryItem(name: "type", value: "lodging"))
-		queryItems.append(URLQueryItem(name: "key", value: "AIzaSyDxiWzz3CWQ-WAXfzAut8-w2sE5d2eIxCw"))
+		queryItems.append(URLQueryItem(name: "key", value: KeyManager.placesAPIKey))
 		components?.queryItems = queryItems
 	
 		guard let url = components?.url else { return }

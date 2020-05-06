@@ -69,4 +69,11 @@ class ViewController: UIViewController {
 			mapView.setUserTrackingMode(.none, animated: true)
 		}
 	}
+	
+	deinit {
+		viewProperties.waitingView.stopAnimating()
+		interactor.controller = nil
+		datasource.controller = nil
+		
+	}
 }

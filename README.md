@@ -3,6 +3,7 @@
 ## Installation Notes:
  1. you need to run `pod install` in order to fetch Pod folder (it is ignored when pushed in order to reduce size)
  2. open the workspace file 
+ 3. In `KeyManager` class, replace the value of `placesAPIKey` with your API Key
 
 ## How to use the app:
 1. You need to provide location consent in the app

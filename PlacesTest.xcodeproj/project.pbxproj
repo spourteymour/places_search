@@ -120,26 +120,11 @@
 		691A65B824618D2D004D93E6 /* PlacesTest */ = {
 			isa = PBXGroup;
 			children = (
-				698131FB2462301800F0CCA3 /* DataSource.swift */,
-				698131FD2462308500F0CCA3 /* Interactor.swift */,
-				691A65E524619AD0004D93E6 /* AnyCodable.swift */,
-				691A65E624619AD0004D93E6 /* Encoder+Extensions.swift */,
+				698132092462541A00F0CCA3 /* Models */,
+				698132072462538400F0CCA3 /* Extensions */,
 				691A65B924618D2D004D93E6 /* AppDelegate.swift */,
 				691A65BB24618D2D004D93E6 /* SceneDelegate.swift */,
-				691A65BD24618D2D004D93E6 /* ViewController.swift */,
-				698131F9246227D500F0CCA3 /* SurfResults.swift */,
-				698131F724621D2200F0CCA3 /* String+Extensions.swift */,
-				691A65DB24618DB4004D93E6 /* APIClient.swift */,
-				691A65E124619083004D93E6 /* SurfLodge.swift */,
-				691A65DD24618DF4004D93E6 /* TypeAliases.swift */,
-				691A65DF24618E14004D93E6 /* AppError.swift */,
-				691A65BF24618D2D004D93E6 /* Main.storyboard */,
-				698131F52462196900F0CCA3 /* MKMapView+Extensions.swift */,
-				691A65C224618D32004D93E6 /* Assets.xcassets */,
-				691A65C424618D32004D93E6 /* LaunchScreen.storyboard */,
-				691A65C724618D32004D93E6 /* Info.plist */,
-				6981320324624EF200F0CCA3 /* WaitingView.swift */,
-				6981320524624FE700F0CCA3 /* ViewProperties.swift */,
+				69813208246253BD00F0CCA3 /* Resources */,
 			);
 			path = PlacesTest;
 			sourceTree = "<group>";
@@ -151,6 +136,85 @@
 				691A65D224618D32004D93E6 /* Info.plist */,
 			);
 			path = PlacesTestTests;
+			sourceTree = "<group>";
+		};
+		698132072462538400F0CCA3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				691A65E624619AD0004D93E6 /* Encoder+Extensions.swift */,
+				698131F724621D2200F0CCA3 /* String+Extensions.swift */,
+				698131F52462196900F0CCA3 /* MKMapView+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		69813208246253BD00F0CCA3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				691A65BF24618D2D004D93E6 /* Main.storyboard */,
+				691A65C224618D32004D93E6 /* Assets.xcassets */,
+				691A65C424618D32004D93E6 /* LaunchScreen.storyboard */,
+				691A65C724618D32004D93E6 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		698132092462541A00F0CCA3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6981320E2462546200F0CCA3 /* Views */,
+				6981320C2462544700F0CCA3 /* ViewProperties */,
+				6981320D2462545500F0CCA3 /* Controller */,
+				6981320A2462543300F0CCA3 /* Datasource */,
+				6981320B2462543C00F0CCA3 /* Interactor */,
+				691A65E524619AD0004D93E6 /* AnyCodable.swift */,
+				698131F9246227D500F0CCA3 /* SurfResults.swift */,
+				691A65E124619083004D93E6 /* SurfLodge.swift */,
+				691A65DF24618E14004D93E6 /* AppError.swift */,
+				691A65DB24618DB4004D93E6 /* APIClient.swift */,
+				691A65DD24618DF4004D93E6 /* TypeAliases.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6981320A2462543300F0CCA3 /* Datasource */ = {
+			isa = PBXGroup;
+			children = (
+				698131FB2462301800F0CCA3 /* DataSource.swift */,
+			);
+			path = Datasource;
+			sourceTree = "<group>";
+		};
+		6981320B2462543C00F0CCA3 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				698131FD2462308500F0CCA3 /* Interactor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		6981320C2462544700F0CCA3 /* ViewProperties */ = {
+			isa = PBXGroup;
+			children = (
+				6981320524624FE700F0CCA3 /* ViewProperties.swift */,
+			);
+			path = ViewProperties;
+			sourceTree = "<group>";
+		};
+		6981320D2462545500F0CCA3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				691A65BD24618D2D004D93E6 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		6981320E2462546200F0CCA3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6981320324624EF200F0CCA3 /* WaitingView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		A05413D0E6E7A0CCF7854657 /* Pods */ = {
@@ -520,7 +584,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3X9GYY35U6;
-				INFOPLIST_FILE = PlacesTest/Info.plist;
+				INFOPLIST_FILE = PlacesTest/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -539,7 +603,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3X9GYY35U6;
-				INFOPLIST_FILE = PlacesTest/Info.plist;
+				INFOPLIST_FILE = PlacesTest/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

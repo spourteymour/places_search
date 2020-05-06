@@ -78,6 +78,7 @@ extension SurfLodge: MKAnnotation {
 	
 	var subtitle: String? {
 		var ratingString = "Rating"
+		
 		if self.rating == -1 {
 			//Rating not available
 			ratingString += " Not Available"
@@ -85,10 +86,10 @@ extension SurfLodge: MKAnnotation {
 			ratingString += ": \(rating)"
 		}
 		
-		//TODO: Create a custom view and add this to a separate UI component
 		let openString = isOpen ? "Yes" : "No"
 		
 		ratingString += " | Is Open: \(openString)"
+		
 		return ratingString
 	}
 }

@@ -1,4 +1,4 @@
-### README
+# README
 
 ## Installation Notes:
  1. you need to run `pod install` in order to fetch Pod folder (it is ignored when pushed in order to reduce size)
